@@ -1,0 +1,7 @@
+<h1>Invoices#index</h1>
+<p>Find me in app/views/invoices/index.html.erb</p>
+
+<%= form_tag(invoices_upload_path, {multipart: true}) do %>
+  <%= file_field_tag 'attachment' %>
+  <%= button_tag "Enviar" %>
+<% end %>
