@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Purchase, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'returns total' do
+    purchase = create(:purchase)
+    expect(purchase.total).to eq(100.0)
+  end
 end
